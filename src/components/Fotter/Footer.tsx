@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                 <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
-                <a href="https://www.linkedin.com/in/guilherme-de-brida/" target="_blank" rel="noopener noreferrer">
+                <a href="src/components/Fotter/Footer" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} size="2x" />
                 </a>
             </div>

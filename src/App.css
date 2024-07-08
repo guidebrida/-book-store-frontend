@@ -1,3 +1,4 @@
+/* App.css */
 .App {
   text-align: center;
 }
@@ -6,16 +7,26 @@
   background-color: #282c34;
   padding: 20px;
   color: white;
+  position: relative;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 .App-nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .App-nav ul li {
   display: inline;
-  margin: 0 15px;
 }
 
 .App-nav ul li a {
@@ -25,6 +36,27 @@
 
 .App-nav ul li a:hover {
   text-decoration: underline;
+}
+
+.auth-buttons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.auth-link {
+  color: white;
+  background-color: #007bff;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  background-color: #0056b3;
 }
 
 main {
