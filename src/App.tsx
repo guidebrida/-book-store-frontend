@@ -4,8 +4,8 @@ import './App.css';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Fotter/Footer';
 import NewBook from './components/NewBook/NewBook';
-// import Login from './components/Login/Login';
-// import Register from './components/Register/Register';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -37,8 +37,8 @@ function App() {
                     <Routes>
                         <Route path="/new-book" element={<NewBook />} />
                         <Route path="/contact" element={<Contact />} />
-                        {/*<Route path="/login" element={<Login />} />*/}
-                        {/*<Route path="/register" element={<Register />} />*/}
+                        <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+                        <Route path="/register" element={<Register />} />
                     </Routes>
                 </main>
                 <Footer />
